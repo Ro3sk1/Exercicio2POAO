@@ -27,7 +27,7 @@ public class Exercicio2 {
     }
 
     class Laptop extends NCSLab {
-        
+
     }
 
     class RaspberryPi extends NCSLab {
