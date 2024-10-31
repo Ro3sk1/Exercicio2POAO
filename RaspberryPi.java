@@ -1,2 +1,2 @@
-public class RaspberryPi {
+public class RaspberryPi extends NCSLab {
 }
