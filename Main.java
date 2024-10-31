@@ -6,12 +6,12 @@ public class Main {
 
         while (escolha_utilizador != 0) {
             System.out.print("""
-                    ------- MENU -------
-                    1 . Mostrar todos os computadores
-                    2 . Mostrar todos os computadores com arquitetura x64
-                    3 . Calcular consumo energético
-                    0 . TERMINAR PROGRAMA
-                    --------------------
+                    | ------------------------ MENU ------------------------ |
+                       1 . Mostrar todos os computadores
+                       2 . Mostrar todos os computadores com arquitetura x64
+                       3 . Calcular consumo energético
+                       0 . TERMINAR PROGRAMA
+                    | -----------------------  |  |  ----------------------- |
                     Introduza a sua opção:\s""");
 
             Scanner sc = new Scanner(System.in);
