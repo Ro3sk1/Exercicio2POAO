@@ -4,6 +4,10 @@ import java.util.Random;
  * Representa um dispositivo Raspberry Pi, que herda atributos comuns de um computador,
  * incluindo o ID, quantidade de memória RAM, armazenamento, velocidade de CPU e arquitetura.
  * Extende a classe {@link Computador}.
+ *
+ * @author Guilherme Rosmaninho
+ * @author Tiago Mustra
+ * @version 1.0
  */
 public class RaspberryPi extends Computador {
 

@@ -4,6 +4,10 @@ import java.util.Random;
  * Representa um Servidor, que herda atributos comuns de um computador,
  * incluindo o ID, quantidade de memória RAM, armazenamento, velocidade de CPU e arquitetura.
  * Extende a classe Computador.
+ *
+ * @author Guilherme Rosmaninho
+ * @author Tiago Mustra
+ * @version 1.0
  */
 public class Servidor extends Computador {
     /**

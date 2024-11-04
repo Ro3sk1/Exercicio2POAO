@@ -2,6 +2,10 @@
 /**
  * Representa um computador genérico com atributos como ID, RAM, armazenamento, CPU,
  * arquitetura e nível.
+ *
+ * @author Guilherme Rosmaninho
+ * @author Tiago Mustra
+ * @version 1.0
  */
 public class Computador {
     private int id;

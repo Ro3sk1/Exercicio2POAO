@@ -5,6 +5,10 @@ import java.util.Random;
  * além de atributos comuns a vários tipos de computadores, como ID,
  * quantidade de memória RAM, armazenamento, velocidade de CPU e arquitetura.
  * Extende a classe {@link Computador}.
+ *
+ * @author Guilherme Rosmaninho
+ * @author Tiago Mustra
+ * @version 1.0
  */
 public class Laptop extends Computador {
     private boolean gpu;
