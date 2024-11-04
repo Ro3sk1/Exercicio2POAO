@@ -23,7 +23,7 @@ public class Servidor extends Computador {
 
     @Override
     public String toString() {
-        return " | Servidor " +
+        return " | Servidor" +
                 " | ID = " + getId() +
                 " | RAM = " + getRam() + "GB" +
                 " | Armazenamento = " + getStorage() + "GB" +
