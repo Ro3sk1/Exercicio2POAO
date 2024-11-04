@@ -25,7 +25,13 @@ public class Laptop extends Computador {
     }
 
     public void calcularConsumoEnergetico() {
-
+        float consumoEnergetico;
+        if(gpu) {
+            consumoEnergetico = Math.round(50 * getCpu() * 10)/10f;
+        } else {
+            consumoEnergetico = Math.round(50 * getCpu() * 1.2 * 10)/10f;
+        }
+        System.out.println("O consumo energético do Laptop com ID " + getId() + " é: " + consumoEnergetico + "W.");
     }
 
     @Override

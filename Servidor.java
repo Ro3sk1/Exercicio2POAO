@@ -15,7 +15,8 @@ public class Servidor extends Computador {
     }
 
     public void calcularConsumoEnergetico() {
-        float consumoEnergetico = 
+        float consumoEnergetico = Math.round(80 * getCpu() * 10)/10f;
+        System.out.println("O consumo energético do Servidor com ID " + getId() + " é: " + consumoEnergetico + "W.");
     }
 
 }

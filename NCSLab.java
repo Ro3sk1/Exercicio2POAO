@@ -88,6 +88,10 @@ public class NCSLab {
                         }
                     }
                     break;
+                case 3:
+                    for(Computador computador : ncslab.listComputador) {
+                        computador.calcularConsumoEnergetico();
+                    }
 
             }
         }

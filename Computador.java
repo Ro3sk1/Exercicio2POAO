@@ -46,6 +46,8 @@ public class Computador {
 
     public void chooseRandValues() {}
 
+    public void calcularConsumoEnergetico() {}
+
     public boolean isArquitetura() {
         return arquitetura;
     }

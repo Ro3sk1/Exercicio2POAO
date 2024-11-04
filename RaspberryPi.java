@@ -15,7 +15,8 @@ public class RaspberryPi extends Computador {
     }
 
     public void calcularConsumoEnergetico() {
-
+        float consumoEnergetico = Math.round(20 * getCpu() * 10)/10f;
+        System.out.println("O consumo energético do Raspberry Pi com ID " + getId() + " é: " + consumoEnergetico + "W.");
     }
 
 }
