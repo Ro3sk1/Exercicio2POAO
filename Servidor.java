@@ -10,7 +10,7 @@ public class Servidor extends Computador {
         Random random = new Random();
         setRam((int) Math.pow(2, (int)(Math.random() * (3)) + 7));
         setStorage((int) Math.pow(2, (int)(Math.random() * (5)) + 10));
-        setCpu((float) (Math.random()) + 3.0f);
+        setCpu(Math.round((Math.random() + 3.0f)*10)/10f);
         setArquitetura(random.nextBoolean());
     }
 
@@ -23,7 +23,7 @@ public class Servidor extends Computador {
 
     @Override
     public String toString() {
-        return "Servidor {" +
+        return " | Servidor {" +
                 "id=" + getId() +
                 ", ram=" + getRam() +
                 ", storage=" + getStorage() +

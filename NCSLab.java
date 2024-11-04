@@ -70,18 +70,20 @@ public class NCSLab {
 
             switch (escolha_utilizador) {
                 case 1:
-                    System.out.println("Computadores:");
+                    System.out.println("<|> Computadores:");
                     for(Computador computador : ncslab.listComputador) {
                         System.out.println(computador);
                     }
+                    System.out.println("<|> ");
                     break;
                 case 2:
-                    System.out.println("Computadores com arquitetura x64:");
+                    System.out.println("<|> Computadores com arquitetura x64:");
                     for(Computador computador : ncslab.listComputador) {
                         if(!computador.isArquitetura()) {
                             System.out.println(computador);
                         }
                     }
+                    System.out.println("<|> ");
                     break;
                 case 3:
                     for(Computador computador : ncslab.listComputador) {

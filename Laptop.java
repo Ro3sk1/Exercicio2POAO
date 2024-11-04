@@ -11,7 +11,7 @@ public class Laptop extends Computador {
         Random random = new Random();
         setRam((int) Math.pow(2, (int)(Math.random() * (3)) + 4));
         setStorage((int) Math.pow(2, (int)(Math.random() * (3)) + 8));
-        setCpu((float) (Math.random()) + 2.0f);
+        setCpu(Math.round((Math.random() * 2.0f) * 10) / 10f);
         setGpu(random.nextBoolean());
         setArquitetura(random.nextBoolean());
     }
@@ -38,7 +38,7 @@ public class Laptop extends Computador {
 
     @Override
     public String toString() {
-        return "Laptop {" +
+        return " | Laptop {" +
                 "id=" + getId() +
                 ", ram=" + getRam() +
                 ", storage=" + getStorage() +
