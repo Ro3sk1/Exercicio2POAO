@@ -9,7 +9,7 @@ public class NCSLab {
                        \s\s\s\s___  | / /_  ____/_  ___/ ___  / ______ ___  /_\s
                        \s\s\s\s__   |/ /_  /    _____ \\  __  /  _  __ `/_  __ \\
                        \s\s\s\s_  /|  / / /___  ____/ /  _  /___/ /_/ /_  /_/ /
-                       \s\s\s\s/_/ |_/  \\____/  /____/   /_____/\\__,_/ /_.___/\s\n""");
+                       \s\s\s\s/_/ |_/  \\____/  /____/   /_____/\\__,_/ /_.___/\s""");
 
     }
 
@@ -67,7 +67,7 @@ public class NCSLab {
         NCSLab ncslab = new NCSLab();
         ncslab.createComputadores();
 
-
+        ncslab.logo();
         while (escolha_utilizador != 0) {
             ncslab.menu();
             Scanner sc = new Scanner(System.in);
