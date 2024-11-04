@@ -6,6 +6,10 @@ import java.util.Scanner;
  * Esta classe permite inicializar uma lista de computadores, exibir um menu
  * interativo e processar as escolhas do usuário para exibir informações
  * sobre os computadores e calcular o consumo energético.
+ *
+ * @author Guilherme Rosmaninho
+ * @author Tiago Mustra
+ * @version 1.0
  */
 public class NCSLab {
 
@@ -14,11 +18,14 @@ public class NCSLab {
      */
     private void logo() {
         System.out.println("""
-                       \s\s\s\s_____   _________________ ______        ______ \s
-                       \s\s\s\s___  | / /_  ____/_  ___/ ___  / ______ ___  /_\s
-                       \s\s\s\s__   |/ /_  /    _____ \\  __  /  _  __ `/_  __ \\
-                       \s\s\s\s_  /|  / / /___  ____/ /  _  /___/ /_/ /_  /_/ /
-                       \s\s\s\s/_/ |_/  \\____/  /____/   /_____/\\__,_/ /_.___/\s""");
+                ##   ##    ####    #####           ####       ###    ######  \s
+                ###  ##   ##  ##  ##   ##           ##       ## ##    ##  ## \s
+                #### ##  ##       ##                ##      ##   ##   ##  ## \s
+                #######  ##        #####            ##      ##   ##   #####  \s
+                ## ####  ##            ##           ##      #######   ##  ## \s
+                ##  ###   ##  ##  ##   ##           ##  ##  ##   ##   ##  ## \s
+                ##   ##    ####    #####           #######  ##   ##  ######  \s
+                """);
     }
 
     /**
