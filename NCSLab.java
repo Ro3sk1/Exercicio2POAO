@@ -57,6 +57,7 @@ public class NCSLab {
 
     public static void main(String[] args) {
         int escolha_utilizador = -1;
+        Scanner sc = new Scanner(System.in);
 
         NCSLab ncslab = new NCSLab();
         ncslab.createComputadores();
@@ -64,9 +65,16 @@ public class NCSLab {
         ncslab.logo();
         while (escolha_utilizador != 0) {
             ncslab.menu();
-            System.out.print("Introduza a sua opção:\s");
-            Scanner sc = new Scanner(System.in);
-            escolha_utilizador = sc.nextInt();
+            while (true) {
+                System.out.print("Introduza a sua opção:\s");
+                if (sc.hasNextInt()) {
+                    escolha_utilizador = sc.nextInt();
+                    break;
+                } else {
+                    System.out.println("ERRO! Por favor, insira um dígito correspondente à opção desejada.");
+                    sc.next();
+                }
+            }
 
             switch (escolha_utilizador) {
                 case 1:

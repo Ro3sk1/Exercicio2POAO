@@ -29,7 +29,7 @@ public class Servidor extends Computador {
                 " | Armazenamento = " + getStorage() + "GB" +
                 " | CPU = " + getCpu() + "GHz" +
                 " | Arquitetura = " + (isArquitetura() ? "ARM" : "x64") +
-                " | Nível = '" + getNivel() + '\'';
+                " | Nível = '" + getNivel() + " |";
     }
 
 }
