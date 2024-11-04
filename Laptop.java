@@ -1,19 +1,43 @@
-public class Laptop extends NCSLab {
-    Laptop(String nivel, long ram, long disco, float cpu, String arquitetura) {
-        if(nivel.equals("Cloud")) {
-            this.nivel = 1;
-        } else if(nivel.equals("Edge")) {
-            this.nivel = 2;
-        } else if (nivel.equals("IoT")) {
-            this.nivel = 3;
-        }
-        this.ram = ram;
-        this.disco = disco;
-        this.cpu = cpu;
-        if(arquitetura.equals("x64")) {
-            this.arquitetura = true;
-        } else if(arquitetura.equals("ARM")) {
-            this.arquitetura = false;
-        }
+import java.util.Random;
+
+public class Laptop extends Computador {
+    private boolean gpu;
+    Laptop(int counter) {
+        super(counter);
+        setNivel("Edge");
+    }
+
+    public void chooseRandValues() {
+        Random random = new Random();
+        setRam((int) Math.pow(2, (int)(Math.random() * (3)) + 4));
+        setStorage((int) Math.pow(2, (int)(Math.random() * (3)) + 8));
+        setCpu((float) (Math.random()) + 2.0f);
+        setGpu(random.nextBoolean());
+        setArquitetura(random.nextBoolean());
+    }
+
+    public boolean getGpu() {
+        return gpu;
+    }
+
+    public void setGpu(boolean gpu) {
+        this.gpu = gpu;
+    }
+
+    public void calcularConsumoEnergetico() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop {" +
+                "id=" + getId() +
+                ", ram=" + getRam() +
+                ", storage=" + getStorage() +
+                ", cpu=" + getCpu() +
+                ", gpu=" + (gpu ? "Sim" : "Não") +
+                ", arquitetura=" + (isArquitetura() ? "ARM" : "x64") +
+                ", nivel='" + getNivel() + '\'' +
+                '}';
     }
 }
