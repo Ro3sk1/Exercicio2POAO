@@ -15,8 +15,22 @@ public class Servidor extends Computador {
     }
 
     public void calcularConsumoEnergetico() {
+        String RESET = "\u001B[0m";
+        String AMARELO = "\u001B[33m";
         float consumoEnergetico = Math.round(80 * getCpu() * 10)/10f;
-        System.out.println("O consumo energético do Servidor com ID " + getId() + " é: " + consumoEnergetico + "W.");
+        System.out.println("O consumo energético do Servidor com ID " + getId() + " é: " + AMARELO + consumoEnergetico + "W" + RESET + ".");
+    }
+
+    @Override
+    public String toString() {
+        return "Servidor {" +
+                "id=" + getId() +
+                ", ram=" + getRam() +
+                ", storage=" + getStorage() +
+                ", cpu=" + getCpu() +
+                ", arquitetura=" + (isArquitetura() ? "ARM" : "x64") +
+                ", nivel='" + getNivel() + '\'' +
+                '}';
     }
 
 }

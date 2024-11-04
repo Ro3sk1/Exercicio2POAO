@@ -14,14 +14,11 @@ public class NCSLab {
     }
 
     private void menu() {
-        System.out.print("""
-                    | ------------------------ MENU ------------------------ |
-                       1 . Mostrar todos os computadores
-                       2 . Mostrar todos os computadores com arquitetura x64
-                       3 . Calcular consumo energético
-                       0 . TERMINAR PROGRAMA
-                    | -----------------------  |  |  ----------------------- |
-                    Introduza a sua opção:\s""");
+        String RESET = "\u001B[0m";
+        String VERMELHO_NEGRITO = "\u001B[1;31m";
+        String VERDE = "\u001B[32m";
+        String NEGRITO = "\u001B[1m";
+        System.out.println(NEGRITO + "| ------------------------ MENU ------------------------ |" + RESET + " \n   " + VERDE + "1 ." + RESET + " Mostrar todos os computadores \n   " + VERDE + "2 ." + RESET + " Mostrar todos os computadores com arquitetura x64 \n   " + VERDE + "3 ." + RESET + " Calcular consumo energético \n   " + VERMELHO_NEGRITO + "0 . TERMINAR PROGRAMA " + RESET + " \n" + NEGRITO + "| -----------------------  |  |  ----------------------- |" + RESET);
     }
 
     public ArrayList<Computador> listComputador;
@@ -59,9 +56,6 @@ public class NCSLab {
     }
 
     public static void main(String[] args) {
-        String RESET = "\u001B[0m";
-        String VERMELHO = "\u001B[31m";
-        String VERDE = "\u001B[32m";
         int escolha_utilizador = -1;
 
         NCSLab ncslab = new NCSLab();
@@ -70,6 +64,7 @@ public class NCSLab {
         ncslab.logo();
         while (escolha_utilizador != 0) {
             ncslab.menu();
+            System.out.print("Introduza a sua opção:\s");
             Scanner sc = new Scanner(System.in);
             escolha_utilizador = sc.nextInt();
 
