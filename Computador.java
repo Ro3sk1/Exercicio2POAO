@@ -63,4 +63,16 @@ public class Computador {
     public void setNivel(String nivel) {
         this.nivel = nivel;
     }
+
+    @Override
+    public String toString() {
+        return "Computador{" +
+                "id=" + id +
+                ", ram=" + ram +
+                ", storage=" + storage +
+                ", cpu=" + cpu +
+                ", arquitetura=" + arquitetura +
+                ", nivel='" + nivel + '\'' +
+                '}';
+    }
 }

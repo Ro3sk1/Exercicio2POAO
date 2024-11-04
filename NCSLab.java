@@ -89,6 +89,10 @@ public class NCSLab {
                     for(Computador computador : ncslab.listComputador) {
                         computador.calcularConsumoEnergetico();
                     }
+                    break;
+                default:
+                    System.out.println("OPÇÃO ERRADA. TENTE NOVAMENTE!");
+                    break;
 
             }
         }
