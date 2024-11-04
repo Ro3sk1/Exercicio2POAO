@@ -23,14 +23,13 @@ public class Servidor extends Computador {
 
     @Override
     public String toString() {
-        return " | Servidor {" +
-                "id=" + getId() +
-                ", ram=" + getRam() +
-                ", storage=" + getStorage() +
-                ", cpu=" + getCpu() +
-                ", arquitetura=" + (isArquitetura() ? "ARM" : "x64") +
-                ", nivel='" + getNivel() + '\'' +
-                '}';
+        return " | Servidor " +
+                " | ID = " + getId() +
+                " | RAM = " + getRam() + "GB" +
+                " | Armazenamento = " + getStorage() + "GB" +
+                " | CPU = " + getCpu() + "GHz" +
+                " | Arquitetura = " + (isArquitetura() ? "ARM" : "x64") +
+                " | Nível = '" + getNivel() + '\'';
     }
 
 }

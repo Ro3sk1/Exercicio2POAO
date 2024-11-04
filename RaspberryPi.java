@@ -23,13 +23,12 @@ public class RaspberryPi extends Computador {
 
     @Override
     public String toString() {
-        return " | Raspberry Pi {" +
-                "id=" + getId() +
-                ", ram=" + getRam() +
-                ", storage=" + getStorage() +
-                ", cpu=" + getCpu() +
-                ", arquitetura=" + (isArquitetura() ? "ARM" : "x64") +
-                ", nivel='" + getNivel() + '\'' +
-                '}';
+        return " | Raspberry Pi" +
+                " | ID = " + getId() +
+                " | RAM = " + getRam() + "GB" +
+                " | Armazenamento = " + getStorage() + "GB" +
+                " | CPU = " + getCpu() + "GHz" +
+                " | Arquitetura = " + (isArquitetura() ? "ARM" : "x64") +
+                " | Nível = '" + getNivel() + '\'';
     }
 }
